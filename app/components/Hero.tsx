@@ -41,7 +41,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out">
               Your partner in <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-bay-of-many-900 to-blue-400">
                 Web Success
               </span>
             </h1>
