@@ -1,7 +1,13 @@
 import VideoThumb from "../public/images/hero-image.png";
 import hero4 from "~/public/images/hero_image_4.jpeg";
 
+import { useState, useEffect } from "react";
+
+import  ContactForm  from "./ContactForm";
+
 export default function Hero() {
+  const [form, setForm] = useState<boolean>(false);
+
   return (
     <section className="relative">
       {/* Illustration behind hero content */}
@@ -60,7 +66,7 @@ export default function Hero() {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0">
+                    onClick={() => setForm(true)}>
                     Contact us
                   </a>
                 </div>
@@ -81,6 +87,7 @@ export default function Hero() {
           </div>*/}
         </div>
       </div>
+      {form && <ContactForm open={form} onClose={() => setForm(false)} />}
     </section>
   );
 }
