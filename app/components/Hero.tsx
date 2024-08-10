@@ -48,7 +48,7 @@ export default function Hero() {
               data-aos="zoom-y-out">
               Your partner in <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-bay-of-many-900 to-blue-400">
-                Web Success
+                Online Success
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
